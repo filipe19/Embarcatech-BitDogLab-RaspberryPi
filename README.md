@@ -18,15 +18,15 @@ The **BitDogLab** platform with **Raspberry Pi Pico W** was chosen for its cost-
 
 Develop an **adaptive lighting system** for classrooms, allowing personalized light adjustments to create an environment more suitable for emotional regulation, concentration, and reduced agitation in students with ADHD. The system will be based on the **BitDogLab** module with **Raspberry Pi Pico W**, enabling automated lighting control using **RGB LEDs**, dynamically adjusting to students' needs.
 
-<div align="center">
-    <img width="100%" src="figuras/0bitdoglab.png" alt="BitDogLab hardware image">
-</div>
-
 ---
 
 ## 3. Block Diagram
 
 (The system's block diagram should be included here)
+
+<div align="center">
+    <img width="100%" src="figuras/0bitdoglab.png" alt="BitDogLab hardware image">
+</div>
 
 ---
 
