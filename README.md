@@ -1,83 +1,88 @@
+# Adaptive Lighting System with RGB LEDs for Studying the Behavior of Children with ADHD
 
-# Sistema de Iluminação Adaptativa com LEDs RGB para Aplicação em Estudos do Comportamento de Crianças com TDAH
-----------------------------------------------------------------------------------------------------------------
-==========
-Instituto_Hardware_BR - Softex - Embarcatech - 2025
+## Instituto_Hardware_BR - Softex - Embarcatech - 2025
 
-### Introduction
-------------
+---
 
-Estudos comprovam que a iluminação adequada tem um impacto significativo no comportamento e desempenho de alunos com TDAH [1][4]. Crianças com esse transtorno são altamente sensíveis a estímulos externos, e a exposição a ambientes com iluminação inadequada pode aumentar os sintomas de desatenção, hiperatividade e impulsividade. Por outro lado, ajustes adequados na iluminação podem favorecer a concentração, reduzir a agitação e promover um ambiente mais propício para a aprendizagem.
-A criação de um sistema acessível e programável de iluminação adaptativa justifica-se como uma ferramenta auxiliar na educação inclusiva, permitindo que educadores personalizem o ambiente escolar conforme as necessidades individuais dos alunos. Tecnologias emergentes, como sensores e sistemas automatizados, demonstram um potencial significativo para auxiliar na autorregulação emocional e comportamental dessas crianças [2].
-A escolha da BitDogLab com a Raspberry Pi Pico W como plataforma de desenvolvimento permite a implementação de uma solução de baixo custo, eficiente e personalizável, viabilizando sua aplicação em diferentes contextos educacionais [6][7]. Além disso, o sistema possibilita ajustes manuais e perfis pré-definidos de iluminação, tornando sua utilização prática e intuitiva para professores e gestores escolares. Dessa forma, o projeto contribui diretamente para o desenvolvimento de estratégias pedagógicas mais inclusivas, alinhadas às necessidades dos alunos com TDAH e demais transtornos do neurodesenvolvimento.
+## 1. Introduction
 
-### Objetivo Geral
+Studies indicate that proper lighting significantly impacts the behavior and performance of students with Attention Deficit Hyperactivity Disorder (ADHD) [1][4]. Children with this disorder are highly sensitive to external stimuli, and exposure to environments with inadequate lighting can amplify symptoms of inattention, hyperactivity, and impulsivity. On the other hand, proper lighting adjustments can enhance concentration, reduce agitation, and promote a more conducive learning environment.
 
-Desenvolver um sistema de iluminação adaptável para salas de aula, permitindo ajustes personalizados de luz para criar um ambiente mais adequado à regulação emocional, concentração e redução da agitação em alunos com Transtorno de Déficit de Atenção e Hiperatividade (TDAH). O sistema será baseado no módulo BitDogLab com Raspberry Pi Pico W, permitindo o controle automatizado da iluminação por meio de LEDs RGB, ajustando-se dinamicamente às necessidades dos alunos.
+The objective of this project is to develop an accessible and programmable adaptive lighting system to support inclusive education, allowing educators to customize the classroom environment according to students' individual needs. The use of sensors and automated systems can aid in the emotional and behavioral self-regulation of these children [2].
 
-div align="center"
+The **BitDogLab** platform with **Raspberry Pi Pico W** was chosen for its cost-effective, efficient, and customizable implementation. The system enables manual adjustments and predefined lighting profiles, making it intuitive for teachers and school administrators. This project contributes to the development of more inclusive educational strategies, aligned with the needs of students with ADHD and other neurodevelopmental disorders.
 
-<img width="100%" align="left" src="figuras\0bitdoglab.png">
+---
 
-/div
+## 2. General Objective
 
-#### diagrama de blocos 
+Develop an **adaptive lighting system** for classrooms, allowing personalized light adjustments to create an environment more suitable for emotional regulation, concentration, and reduced agitation in students with ADHD. The system will be based on the **BitDogLab** module with **Raspberry Pi Pico W**, enabling automated lighting control using **RGB LEDs**, dynamically adjusting to students' needs.
 
-### Requisitos de Hardware e Software
-O sistema é composto por componentes físicos e programas necessários para seu funcionamento:
-Hardware:
-Raspberry Pi Pico W
-LEDs RGB
-Pushbuttons
-Display OLED
-Software:
-Firmware desenvolvido em linguagem C para controle do sistema.
-Interfaces de configuração para ajuste da iluminação.
+<div align="center">
+    <img width="100%" src="figures/0bitdoglab.png" alt="BitDogLab hardware image">
+</div>
 
+---
 
-<img width="100%" align="left" src="figuras\2bitdoglab.png">
-#### Placa BitDogLab durante os testes com o Led-RGB, Display e botões
+## 3. Block Diagram
 
+(The system's block diagram should be included here)
 
-### Referências
+---
 
-[1] AMERICAN PSYCHIATRIC ASSOCIATION. DSM-5: Manual Diagnóstico e Estatístico de Transtornos Mentais. 5. ed. Arlington: APA, 2013.
+## 4. Hardware and Software Requirements
 
-[2] SHELTON, S. H. Teacher Perspectives on Classroom Lighting Conditions for Students with and without an ADHD Diagnosis. 2020. Dissertação (Mestrado em Design de Interiores) – Sidney O. Smith Graduate School, Brenau University, Gainesville, 2020.
+### 4.1 Hardware
 
-[3] CIBRIAN, F. L.; LAKES, K. D.; SCHUCK, S. E. B.; HAYES, G. R. The potential for emerging technologies to support self-regulation in children with ADHD: A literature review. International Journal of Child-Computer Interaction, [s. l.], v. 31, p. 100421, mar. 2022. Elsevier.
+- **Raspberry Pi Pico W**
+- **RGB LEDs**
+- **Pushbuttons**
+- **OLED Display**
 
-[4] SIMPSON, J. F. The Calming Effects of Modified Lighting. 2016. Tese (Doutorado em Educação) – University of Mississippi, Oxford, 2016.
+### 4.2 Software
 
-[5] LOVISA, M. Multi-sensory environments adaptation for the relaxation of children with neurodevelopmental disorders. 2017. Dissertação (Mestrado em Engenharia Industrial e da Informação) – Politecnico di Milano, Milão, 2017.
+- Firmware developed in **C language** for system control.
+- Configuration interfaces for lighting adjustments.
 
-[6] DAVIDSON, Z. C. M.; DANG, S.; VASILAKOS, X. Blended Laboratory Design Using Raspberry Pi Pico for Digital Circuits and Systems. IEEE Transactions on Learning Technologies, [s. l.], p. 1-10, 2024.
+<div align="center">
+    <img width="100%" src="figures/2bitdoglab.png" alt="BitDogLab during testing">
+</div>
 
-[7] FRUETT, F.; BARBOSA, F. P. S.; FRAGA, S. C. Z.; GUIMARÃES, P. I. A. Empowering STEAM Activities With Artificial Intelligence and Open Hardware: The BitDogLab. IEEE Transactions on Education, [s. l.], v. 67, n. 3, p. 1-9, 2024. DOI: 10.1109/te.2024.3377555. ISSN: 1557-9638.
+---
 
-[8] VEITCH, J. A. Psychological Processes Influencing Lighting Quality. Journal of the Illuminating Engineering Society, [s. l.], v. 30, n. 1, p. 124-140, 2001. National Research Council of Canada, Ottawa.
+## 5. References
 
-[9] ÖZTÜRK, M. A Predictive Control System for Indoor Lighting. 2017. Trabalho de Conclusão de Curso (Graduação em Engenharia) – Institute of Architecture of Application Systems, University of Stuttgart, Stuttgart, 2017.
+1. AMERICAN PSYCHIATRIC ASSOCIATION. DSM-5: Diagnostic and Statistical Manual of Mental Disorders. 5th ed. Arlington: APA, 2013.
+2. SHELTON, S. H. *Teacher Perspectives on Classroom Lighting Conditions for Students with and without an ADHD Diagnosis*. 2020. Master's Thesis – Brenau University, Gainesville, 2020.
+3. CIBRIAN, F. L.; LAKES, K. D.; SCHUCK, S. E. B.; HAYES, G. R. *The potential for emerging technologies to support self-regulation in children with ADHD: A literature review*. International Journal of Child-Computer Interaction, vol. 31, p. 100421, Mar. 2022.
+4. SIMPSON, J. F. *The Calming Effects of Modified Lighting*. 2016. Ph.D. Thesis – University of Mississippi, Oxford, 2016.
+5. LOVISA, M. *Multi-sensory environments adaptation for the relaxation of children with neurodevelopmental disorders*. 2017. Master's Thesis – Politecnico di Milano, 2017.
+6. DAVIDSON, Z. C. M.; DANG, S.; VASILAKOS, X. *Blended Laboratory Design Using Raspberry Pi Pico for Digital Circuits and Systems*. IEEE Transactions on Learning Technologies, 2024.
+7. FRUETT, F.; BARBOSA, F. P. S.; FRAGA, S. C. Z.; GUIMARÃES, P. I. A. *Empowering STEAM Activities With Artificial Intelligence and Open Hardware: The BitDogLab*. IEEE Transactions on Education, 2024.
+8. VEITCH, J. A. *Psychological Processes Influencing Lighting Quality*. Journal of the Illuminating Engineering Society, vol. 30, no. 1, p. 124-140, 2001.
+9. ÖZTÜRK, M. *A Predictive Control System for Indoor Lighting*. 2017. Bachelor's Thesis – University of Stuttgart, 2017.
+10. YOUNG, H. D.; FREEDMAN, R. A. *Physics IV: Optics and Modern Physics*. Pearson Education do Brasil Ltda, 2016.
+11. GREEN, K. *Light Sensitivity in ADHD: The Relationship with Hypersensitivity and Sensory Processing*. 2018. Available at: [Link](https://www.theraspecs.com/blog/adhd-light-sensitivity-hypersensitivity-sensory-processing). Accessed on 02/15/2025.
+12. TIMOTEO. *Bitdoglab-C: Pico SDK applications for the BitDogLab, written in C*. Available at: [Link](https://github.com/BitDogLab/BitDogLab-C). Accessed on 02/15/2025.
+13. SHABAZ. *PicoChroma - LED Lighting*. Available at: [Link](https://github.com/shabaz123/picochroma). Accessed on 02/15/2025.
 
-[10] YOUNG, H. D.; FREEDMAN, R. A. Física IV: Ótica e Física Moderna. Pearson Education do Brasil Ltda, 2016.
+---
 
-[11] GREEN, K. Sensibilidade à luz no TDAH: a relação com a hipersensibilidade e o processamento sensorial. 2018. Disponível em: <https://www.theraspecs.com/blog/adhd-light-sensitivity-hypersensitivity-sensory-processing>. Acesso em 15 de fevereiro de 2025.
+## 6. Appendix
 
-[12] TIMOTEO. Bitdoglab-C. Pico SDK applications for the BitDogLab, written in C. Disponível em: < https://github.com/BitDogLab/BitDogLab-C>. Acesso em 15 de fevereiro de 2025.
+### 6.1 Video Presentation
 
-[13] SHABAZ. PicoChroma - LED Lighting. Disponível em: <https://github.com/shabaz123/picochroma>. Acesso em 15 de fevereiro de 2025.
+[Watch the project presentation video](https://youtube.com/shorts/BVoW-QmkCpc)
 
+---
 
-### Apêndice
-[] Link do vídeo apresentação deste projeto, disponível em: < https://youtube.com/shorts/BVoW-QmkCpc >  
+## 7. File Structure
 
-### Arquivos 
+- **CMakeLists.txt** - CMake configuration
+- **pico_sdk_import.cmake** - Pico SDK import
+- **rgb_pwm.c** - LED control implementation
 
-CMakeLists.txt --> 
+<div align="center">
+    <img width="100%" src="figures/1bitdoglab.png" alt="Development environment in Visual Studio Code">
+</div>
 
-pico_sdk_import.cmake --> 
-
-rgb_pwm.c --> 
-
-<img width="100%" align="left" src="figuras\1bitdoglab.png">
-#### Ambiente de desenvolvimento Visual Studio Code durante a implementação do projeto
