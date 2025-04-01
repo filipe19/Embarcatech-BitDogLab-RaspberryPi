@@ -21,9 +21,7 @@ Develop an **adaptive lighting system** for classrooms, allowing personalized li
 ---
 
 ## 3. Block Diagram
-
-(The system's block diagram should be included here)
-
+The system's block diagram
 <div align="center">
     <img width="100%" src="figuras/0bitdoglab.png" alt="BitDogLab hardware image">
 </div>
@@ -32,12 +30,17 @@ Develop an **adaptive lighting system** for classrooms, allowing personalized li
 
 ## 4. Hardware and Software Requirements
 
-### 4.1 Hardware
+### 4.1 Materials List
 
-- **Raspberry Pi Pico W**
-- **RGB LEDs**
-- **Pushbuttons**
-- **OLED Display**
+| Component            | Connection on BitDogLab     |  
+|----------------------|---------------------------|  
+| BitDogLab (RP2040)   | -                         |  
+| Raspberry Pi Pico W  | -                         |  
+| OLED Display I2C     | SDA: GPIO14 / SCL: GPIO15 |  
+| Pushbuttons          | Digital GPIO5 and GPIO6   |
+| RGB LED (red)        | GPIO13 PWM (Slice 6)      |
+| RGB LED (blue)       | GPIO12 PWM (Slice 6)      |
+| RGB LED (green)      | GPIO11 PWM (Slice 5)      |
 
 ### 4.2 Software
 
@@ -86,3 +89,10 @@ Develop an **adaptive lighting system** for classrooms, allowing personalized li
     <img width="100%" src="figuras/1bitdoglab.png" alt="Development environment in Visual Studio Code">
 </div>
 
+## 8. Execution  
+
+1. Open the project in VS Code, using an environment with support for the Raspberry Pi Pico SDK.  
+2. Compile the project normally (Ctrl+Shift+B in VS Code or via terminal using CMake and Make).  
+3. Connect your BitDogLab via USB cable and put the Pico in boot mode (press the BOOTSEL button and connect the cable).  
+4. Copy the generated `.uf2` file to the storage drive that appears (RPI-RP2).  
+5. The Pico will restart automatically and begin executing the code.  
